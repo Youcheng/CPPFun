@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named throwExceptInDestructor
+
+# Build rule for target.
+throwExceptInDestructor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 throwExceptInDestructor
+.PHONY : throwExceptInDestructor
+
+# fast build rule for target.
+throwExceptInDestructor/fast:
+	$(MAKE) -f CMakeFiles/throwExceptInDestructor.dir/build.make CMakeFiles/throwExceptInDestructor.dir/build
+.PHONY : throwExceptInDestructor/fast
+
+#=============================================================================
 # Target rules for targets named catchExceptFromConstructorInitializer
 
 # Build rule for target.
@@ -203,6 +216,33 @@ CopyControl/copyInitialization.cpp.s:
 	$(MAKE) -f CMakeFiles/copyInitialization.dir/build.make CMakeFiles/copyInitialization.dir/CopyControl/copyInitialization.cpp.s
 .PHONY : CopyControl/copyInitialization.cpp.s
 
+Destructor/throwExceptInDestructor.o: Destructor/throwExceptInDestructor.cpp.o
+
+.PHONY : Destructor/throwExceptInDestructor.o
+
+# target to build an object file
+Destructor/throwExceptInDestructor.cpp.o:
+	$(MAKE) -f CMakeFiles/throwExceptInDestructor.dir/build.make CMakeFiles/throwExceptInDestructor.dir/Destructor/throwExceptInDestructor.cpp.o
+.PHONY : Destructor/throwExceptInDestructor.cpp.o
+
+Destructor/throwExceptInDestructor.i: Destructor/throwExceptInDestructor.cpp.i
+
+.PHONY : Destructor/throwExceptInDestructor.i
+
+# target to preprocess a source file
+Destructor/throwExceptInDestructor.cpp.i:
+	$(MAKE) -f CMakeFiles/throwExceptInDestructor.dir/build.make CMakeFiles/throwExceptInDestructor.dir/Destructor/throwExceptInDestructor.cpp.i
+.PHONY : Destructor/throwExceptInDestructor.cpp.i
+
+Destructor/throwExceptInDestructor.s: Destructor/throwExceptInDestructor.cpp.s
+
+.PHONY : Destructor/throwExceptInDestructor.s
+
+# target to generate assembly for a file
+Destructor/throwExceptInDestructor.cpp.s:
+	$(MAKE) -f CMakeFiles/throwExceptInDestructor.dir/build.make CMakeFiles/throwExceptInDestructor.dir/Destructor/throwExceptInDestructor.cpp.s
+.PHONY : Destructor/throwExceptInDestructor.cpp.s
+
 TypeTrait/type.o: TypeTrait/type.cpp.o
 
 .PHONY : TypeTrait/type.o
@@ -238,6 +278,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... throwExceptInDestructor"
 	@echo "... catchExceptFromConstructorInitializer"
 	@echo "... type"
 	@echo "... copyInitialization"
@@ -247,6 +288,9 @@ help:
 	@echo "... CopyControl/copyInitialization.o"
 	@echo "... CopyControl/copyInitialization.i"
 	@echo "... CopyControl/copyInitialization.s"
+	@echo "... Destructor/throwExceptInDestructor.o"
+	@echo "... Destructor/throwExceptInDestructor.i"
+	@echo "... Destructor/throwExceptInDestructor.s"
 	@echo "... TypeTrait/type.o"
 	@echo "... TypeTrait/type.i"
 	@echo "... TypeTrait/type.s"

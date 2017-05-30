@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/crtrader/CLionProjects/CPPFun/cmake-build-debug",
+  "command": "/opt/cresearch/bin/g++     -g   -std=gnu++1y -o CMakeFiles/throwExceptInDestructor.dir/Destructor/throwExceptInDestructor.cpp.o -c /home/crtrader/CLionProjects/CPPFun/Destructor/throwExceptInDestructor.cpp",
+  "file": "/home/crtrader/CLionProjects/CPPFun/Destructor/throwExceptInDestructor.cpp"
+},
+{
+  "directory": "/home/crtrader/CLionProjects/CPPFun/cmake-build-debug",
   "command": "/opt/cresearch/bin/g++     -g   -std=gnu++1y -o CMakeFiles/catchExceptFromConstructorInitializer.dir/Constructor/catchExceptFromConstructorInitializer.cpp.o -c /home/crtrader/CLionProjects/CPPFun/Constructor/catchExceptFromConstructorInitializer.cpp",
   "file": "/home/crtrader/CLionProjects/CPPFun/Constructor/catchExceptFromConstructorInitializer.cpp"
 },

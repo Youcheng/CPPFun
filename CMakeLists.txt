@@ -19,3 +19,6 @@ add_executable(type TypeTrait/type.cpp)
 
 #Constructor
 add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp)
+
+#Destructor
+add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
