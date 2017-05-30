@@ -3,6 +3,7 @@ Exceptions
 
 
 Stack Unwinding
+```cpp
 - when an exception is thrown, execution of current function is suspended
   and the search for a matching catch clause begins.
 - if the throw appears inside a try block
@@ -42,3 +43,4 @@ Stack Unwinding
   }
 - when a block is exited during the stack unwinding, the compiler guarantees that objects created in that
   block are properly destroyed.
+```
