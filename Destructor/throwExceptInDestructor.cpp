@@ -8,7 +8,7 @@ public:
     Foo() = default;
 
 
-/*
+
    ~Foo() {
        try {
            throw std::runtime_error("Thrown from ~Foo.");
@@ -17,12 +17,13 @@ public:
            std::cout << "caught " << e.what() << std::endl;
        }
     }
-*/
 
+/*
     ~Foo() {
         throw std::runtime_error("Thrown from ~Foo.");
         //warning: throw will always call terminate()
     }
+*/
 };
 
 void f(int tmp) {
@@ -54,8 +55,8 @@ int main() {
     try {
         f(3);
         int *ip = nullptr;
-        //std::cout << *ip << std::endl;
-        //std::cout << "end of main try" << std::endl;
+        std::cout << *ip << std::endl;
+        std::cout << "end of main try" << std::endl;
     }catch(std::exception &e) {
         std::cout << e.what() << std::endl;
     }

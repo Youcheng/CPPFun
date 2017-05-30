@@ -44,3 +44,12 @@ Stack Unwinding
 - when a block is exited during the stack unwinding, the compiler guarantees that objects created in that
   block are properly destroyed.
 ```
+
+Rethrow
+- a catch passes its exception out to another catch by rethrowing the exception, like throw;
+  the current exception object is passed up the call chain.
+
+The noexcept Exception Specification for a function
+- if the compiler knows that no exceptions will be thrown, it can(sometimes) perform optimizations.
+- if a nonexcept function does throw, terminate is called to enfore the promise not to throw at run time.
+- the compiler in general cannot, and does not, verify exception specifications at compile time.
