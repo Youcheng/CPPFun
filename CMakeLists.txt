@@ -46,3 +46,7 @@ add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
 add_executable(dlopen ${CMAKE_SOURCE_DIR}/Library/dlopen/dlopen.cpp)
 target_link_libraries(dlopen ${CMAKE_DL_LIBS})
 target_link_libraries(dlopen pthread)
+
+#SharedVariable
+add_executable(deadlock ${CMAKE_SOURCE_DIR}/SharedVariable/deadLock.cpp)
+target_link_libraries(deadlock pthread)
