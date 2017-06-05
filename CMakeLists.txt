@@ -35,6 +35,7 @@ add_executable(copyInitialization CopyControl/copyInitialization.cpp)
 
 #TypeTrait
 add_executable(type TypeTrait/type.cpp)
+add_executable(staticAssert TypeTrait/staticAssert.cpp)
 
 #Constructor
 add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp)
