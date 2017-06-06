@@ -1,4 +1,9 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.6)
+if (NOT DEFINED ENV{CC} AND NOT DEFINED ENV{CXX})
+    set(CMAKE_C_COMPILER "/opt/cresearch/bin/gcc")
+    set(CMAKE_CXX_COMPILER "/opt/cresearch/bin/g++")
+endif()
+
 project(CPPFun CXX)
 
 
@@ -38,7 +43,7 @@ add_executable(type TypeTrait/type.cpp)
 add_executable(staticAssert TypeTrait/staticAssert.cpp)
 
 #Constructor
-add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp)
+add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp)
 
 #Destructor
 add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
@@ -51,3 +56,5 @@ target_link_libraries(dlopen pthread)
 #SharedVariable
 add_executable(deadlock ${CMAKE_SOURCE_DIR}/SharedVariable/deadLock.cpp)
 target_link_libraries(deadlock pthread)
+add_executable(conditionVariable ${CMAKE_SOURCE_DIR}/SharedVariable/conditionVariable.cpp)
+target_link_libraries(conditionVariable pthread)
