@@ -43,7 +43,7 @@ add_executable(type TypeTrait/type.cpp)
 add_executable(staticAssert TypeTrait/staticAssert.cpp)
 
 #Constructor
-add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp)
+add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp Future/future.cpp Future/writerReader.cpp VirtualFunction/multipleVirtualFunc.cpp)
 
 #Destructor
 add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
@@ -58,3 +58,12 @@ add_executable(deadlock ${CMAKE_SOURCE_DIR}/SharedVariable/deadLock.cpp)
 target_link_libraries(deadlock pthread)
 add_executable(conditionVariable ${CMAKE_SOURCE_DIR}/SharedVariable/conditionVariable.cpp)
 target_link_libraries(conditionVariable pthread)
+
+#Future
+add_executable(future ${CMAKE_SOURCE_DIR}/Future/future.cpp)
+target_link_libraries(future pthread)
+add_executable(writerReader ${CMAKE_SOURCE_DIR}/Future/writerReader.cpp)
+target_link_libraries(writerReader pthread)
+
+#VirtualFunction
+add_executable(multipleVirtualFunc ${CMAKE_SOURCE_DIR}/VirtualFunction/multipleVirtualFunc.cpp)
