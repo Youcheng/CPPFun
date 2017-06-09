@@ -43,7 +43,7 @@ add_executable(type TypeTrait/type.cpp)
 add_executable(staticAssert TypeTrait/staticAssert.cpp)
 
 #Constructor
-add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp Future/future.cpp Future/writerReader.cpp VirtualFunction/multipleVirtualFunc.cpp)
+add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp Future/future.cpp Future/writerReader.cpp VirtualFunction/multipleVirtualFunc.cpp StorageDurationAndLinkage/threadLocal.cpp)
 
 #Destructor
 add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
@@ -67,3 +67,7 @@ target_link_libraries(writerReader pthread)
 
 #VirtualFunction
 add_executable(multipleVirtualFunc ${CMAKE_SOURCE_DIR}/VirtualFunction/multipleVirtualFunc.cpp)
+
+#StorageDurationAndLinkage
+add_executable(threadLocal ${CMAKE_SOURCE_DIR}/StorageDurationAndLinkage/threadLocal.cpp)
+target_link_libraries(threadLocal pthread)
