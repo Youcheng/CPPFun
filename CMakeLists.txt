@@ -32,7 +32,7 @@ endforeach()
 
 
 # put all object files into a lib, fun
-add_library(fun ${SOURCE_FILES})
+add_library(fun ${SOURCE_FILES} Preprocessor/log.cpp)
 link_libraries(fun)
 
 #CopyControl
@@ -43,7 +43,7 @@ add_executable(type TypeTrait/type.cpp)
 add_executable(staticAssert TypeTrait/staticAssert.cpp)
 
 #Constructor
-add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp Future/future.cpp Future/writerReader.cpp VirtualFunction/multipleVirtualFunc.cpp StorageDurationAndLinkage/threadLocal.cpp)
+add_executable(catchExceptFromConstructorInitializer Constructor/catchExceptFromConstructorInitializer.cpp SharedVariable/conditionVariable.cpp Future/future.cpp Future/writerReader.cpp VirtualFunction/multipleVirtualFunc.cpp StorageDurationAndLinkage/threadLocal.cpp Pimp/widget.h Pimp/widget.cpp Object/alignment.cpp)
 
 #Destructor
 add_executable(throwExceptInDestructor Destructor/throwExceptInDestructor.cpp)
@@ -71,3 +71,19 @@ add_executable(multipleVirtualFunc ${CMAKE_SOURCE_DIR}/VirtualFunction/multipleV
 #StorageDurationAndLinkage
 add_executable(threadLocal ${CMAKE_SOURCE_DIR}/StorageDurationAndLinkage/threadLocal.cpp)
 target_link_libraries(threadLocal pthread)
+
+#String
+add_executable(cstrcpy ${CMAKE_SOURCE_DIR}/String/cstrcpy.cpp)
+
+#Pimp
+add_executable(widget ${CMAKE_SOURCE_DIR}/Pimp/widget.cpp)
+
+#Preprocessor
+add_executable(log ${CMAKE_SOURCE_DIR}/Preprocessor/log.cpp)
+
+#Object
+add_executable(alignment ${CMAKE_SOURCE_DIR}/Object/alignment.cpp)
+
+#UniversalReference
+add_executable(universalReference ${CMAKE_SOURCE_DIR}/UniversalReference/universalReference.cpp)
+target_link_libraries(universalReference pthread)
