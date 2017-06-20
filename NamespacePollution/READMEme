@@ -1,0 +1,12 @@
+Don't write namespace using declarations or using
+directives in a header file, or before an #include directive
+in an implementation file.
+
+You are liable to affect the meaning of later code
+by causing namespace pollution, by taking an incomplete
+snapshot of the names that you want to import, or both.
+
+(Note the qualifier "namespace using
+declarations or using directives." This doesn't apply to
+writing class member using declarations to bring in base
+class member names as needed.)

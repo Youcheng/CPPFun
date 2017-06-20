@@ -1,0 +1,71 @@
+#cmake -P hello.txt.
+#(The -P option runs the given script, but doesn’t generate a build pipeline.)
+
+
+# Hello World
+message("Hello world!")
+
+# All variables are strings
+set(NAME youcheng)
+set(GREET my name)
+message("Hello ${NAME}!") # substitute a variable into the message, variable reference
+message("Hello ${GREET}!") # a list
+
+#cmake -DNAME=Newman -P hello.txt # define a variable from cmake command line
+
+#when a variable is undefined, it defaults to an empty string
+
+# nested variable reference
+set(JOHN_NAME "John Cloper")
+set(JOHN_ADDRESS "Shanghai china")
+set(PERSON "JOHN")
+message("${${PERSON}_NAME} lives at ${${PERSON}_ADDRESS}")
+
+# list
+set(MY_LIST These are separate arguments)
+foreach(ARG  ${MY_LIST})
+    message("${ARG}")
+endforeach()
+# lists are just semicolon-delimited strings
+set(MY_LIST "These; are; separate; arguments")
+foreach(ARG  ${MY_LIST})
+    message("${ARG}")
+endforeach()
+
+
+# every statement is a command
+# that takes a list of string arguments
+# and has no return value
+math(EXPR SUM "2*4")
+math(EXPR DOUBLE_SUM "${SUM}*2")
+message("SUM = ${SUM}")
+message("DOUBLE_SUM = ${DOUBLE_SUM}")
+
+
+# functions run in their own scope
+function(doubleIt VALUE)
+    math(EXPR RESULT "${VALUE} * 2")
+    message("RESULT = ${RESULT}")
+endfunction()
+doubleIt("4")                           # Prints: 8
+#
+function(doubleIt VARNAME VALUE)
+    math(EXPR RESULT "${VALUE} * 2")
+    set(${VARNAME} "${RESULT}" PARENT_SCOPE)    # Set the named variable in caller's scope
+endfunction()
+doubleIt(RESULT "4")                    # Tell the function to set the variable named RESULT
+message("${RESULT}")                    # Prints: 8
+
+
+# macro run in the same scope as their caller
+macro(doubleIt VARNAME VALUE)
+    math(EXPR ${VARNAME} "${VALUE} * 2")        # Set the named variable in caller's scope
+endmacro()
+
+doubleIt(M_RESULT "4")                    # Tell the macro to set the variable named RESULT
+message("${M_RESULT}")                    # Prints: 8
+
+#
+foreach(ARG  ${CMAKE_MODULE_PATH})
+    message("${ARG}")
+endforeach()

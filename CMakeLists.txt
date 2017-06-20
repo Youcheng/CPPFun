@@ -82,8 +82,14 @@ add_executable(widget ${CMAKE_SOURCE_DIR}/Pimp/widget.cpp)
 add_executable(log ${CMAKE_SOURCE_DIR}/Preprocessor/log.cpp)
 
 #Object
-add_executable(alignment ${CMAKE_SOURCE_DIR}/Object/alignment.cpp)
+add_executable(alignment ${CMAKE_SOURCE_DIR}/Object/alignment.cpp NamespacePollution/snip1.h NamespacePollution/snip2.h NamespacePollution/snip3.h NamespacePollution/snip4.h NamespacePollution/pollutedNamespace.cpp)
 
 #UniversalReference
 add_executable(universalReference ${CMAKE_SOURCE_DIR}/UniversalReference/universalReference.cpp)
 target_link_libraries(universalReference pthread)
+
+#NamespacePollution
+add_executable(pollutedNamespace ${CMAKE_SOURCE_DIR}/NamespacePollution/pollutedNamespace.cpp)
+
+#SmartPointer
+add_executable(shared_ptr ${CMAKE_SOURCE_DIR}/SmartPointer/shared_ptr.cpp)
