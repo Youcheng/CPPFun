@@ -1,1 +1,1 @@
-![shared_ptr_control_block](https://github.com/Youcheng/CPPFun/blob/master/controlblock.png)
+![shared_ptr_control_block](https://github.com/Youcheng/CPPFun/controlblock.png)
