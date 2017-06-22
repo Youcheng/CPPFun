@@ -66,6 +66,4 @@ doubleIt(M_RESULT "4")                    # Tell the macro to set the variable n
 message("${M_RESULT}")                    # Prints: 8
 
 #
-foreach(ARG  ${CMAKE_MODULE_PATH})
-    message("${ARG}")
-endforeach()
+add_subdirectory(sub)
