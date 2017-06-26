@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <type_traits>
 struct Y {
     char a;
     char b;
@@ -25,10 +25,10 @@ struct W {
 }; // size: 28, alignment: 4
 
 
-struct alignas(8) B
+struct alignas(16) B
 {
     char sse_data[4];
-}; // size: 8, alignment: 8
+}; // size: 16, alignment: 16
 
 struct H {
     B b;  // size: 8, alignment: 8
@@ -47,4 +47,8 @@ int main()
               << " alignof(B) = " << alignof(B) << '\n';
     std::cout << "sizeof(H) = " << sizeof(H)
               << " alignof(H) = " << alignof(H) << '\n';
+
+    using tt = typename std::aligned_storage<sizeof(H), alignof(H)>::type;
+    std::cout << "sizeof(tt) = " << sizeof(tt)
+              << " alignof(tt) = " << alignof(tt) << '\n';
 }
