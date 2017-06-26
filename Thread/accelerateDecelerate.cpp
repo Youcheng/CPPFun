@@ -66,6 +66,33 @@ int main() {
                   << "sched_get_priority_max: " << sched_get_priority_max(policy) << std::endl
                   << "schedparam.__sched_priority: " << schedparam.__sched_priority << std::endl
                   << "sleeping... " << std::endl;
+
+        // get resource usage
+        // http://man7.org/linux/man-pages/man2/getrusage.2.html
+        rusage use;
+        int tmp = getrusage(RUSAGE_THREAD, &use);
+        if (tmp != 0) {
+            std::cout << "cannot get usage" << std::endl;
+        }
+        else {
+            std::cout << use.ru_utime.tv_sec << " /* user CPU time used */" << std::endl
+                      << use.ru_stime.tv_sec << " /* system CPU time used */" << std::endl
+                      << use.ru_maxrss << " /* maximum resident set size */" << std::endl
+                      << use.ru_ixrss << " /* integral shared memory size */" << std::endl
+                      << use.ru_idrss << " /* integral unshared data size */" << std::endl
+                    << use.ru_isrss << " /* integral unshared stack size */" << std::endl
+                    << use.ru_minflt << " /* page reclaims (soft page faults) */" << std::endl
+                    << use.ru_majflt << " /* page faults (hard page faults) */" << std::endl
+                    << use.ru_nswap << " /* swaps */" << std::endl
+                    << use.ru_inblock << " /* block input operations */" << std::endl
+                    << use.ru_oublock << " /* block output operations */" << std::endl
+                    << use.ru_msgsnd << " /* IPC messages sent */" << std::endl
+                    << use.ru_msgrcv << " /* IPC messages received */" << std::endl
+                    << use.ru_nsignals << " /* signals received */" << std::endl
+                    << use.ru_nvcsw << " /* voluntary context switches */" << std::endl
+                    << use.ru_nivcsw << " /* involuntary context switches */" << std::endl;
+        }
+
         std::this_thread::sleep_for(std::chrono::seconds(120));
     }
 
