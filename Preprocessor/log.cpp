@@ -6,7 +6,7 @@
 #include <iostream>
 
 int main() {
-    int a;
+    int a = 5;
     LOG("yeah!!" << a);
 }
 
