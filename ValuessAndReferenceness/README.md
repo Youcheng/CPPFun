@@ -22,9 +22,10 @@
   Widget&& var1 = makeWidget(); var1 is lvalue of type, rvalue reference to Widget<br>
   static_cast<Widget&&>(var1); this whole expression is rvalue of type, rvalue reference to Widget<br>
 
-# reference bind
+# binding between valueness and referenceness
 - bind rvalue reference only to rvalue
-- bind lvalue reference to either lvalue or rvalue
+- bind lvalue reference to either lvalue or rvalue<br>
+  bind lvalue reference to rvalue only when the lvalue reference is declared as a reference-to-const
 - bind universal reference to either lvalue or rvalue
 
 
