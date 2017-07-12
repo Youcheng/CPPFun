@@ -1,3 +1,6 @@
+# Resources
+- https://isocpp.org/blog/2012/11/universal-references-in-c11-scott-meyers
+
 T&& has two different meanings.
 One is rvalue reference, which is bound to rvalues.
 The other is either rvalue reference or lvalue reference, which is virtually bound to anything.
