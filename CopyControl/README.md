@@ -32,4 +32,9 @@ converting that operand if necessary.
 - the difference between copy and move is that<br>
   after a copy the two objects have the same value<br>
   whereas after a move the source object is not required to have its original value
-- move can be used when the source object will not be used again   
+- move can be used when the source object will not be used again
+- Copy is the conventional meaning of x=y ; <br>
+  that is, the effect is that the values of x and y are<br>
+  both equal to y ’s value before the assignment
+- Move leaves x with y ’s former value and y with some moved-from state. <br>
+  For the most interesting cases, containers, that moved-from state is ‘‘empty.’’    
