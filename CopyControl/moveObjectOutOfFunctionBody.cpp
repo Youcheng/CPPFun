@@ -30,6 +30,7 @@ int main() {
     //  ident 0x7ffdf13577cf(arg)
 
     // MOVE OBJECT OUT OF FUNCTION BODY
+    // IF MOVE CONSTRUCTOR/ASSIGNMENT ARE NOT DEFINED, COPY CONSTRUCTOR/ASSIGNMENT WILL BE USED.
     //  moveConstructor from 0x7ffdf13577cf(arg) to 0x7ffdf13577ce(temporary object)
     //  moveAssignment from 0x7ffdf13577ce(temporary object) to 0x7ffdf13577cd (x1)
     //  destructor 0x7ffdf13577ce(temporary object)
@@ -41,7 +42,7 @@ int main() {
     x1 = x2;
     //  copyAssignment from 0x7ffdf13577cc(x2) to 0x7ffdf13577cd(x1)
 
+
     // destructor 0x7ffdf13577cc(x1)
     // destructor 0x7ffdf13577cd(x2)
-
 }
