@@ -28,4 +28,8 @@ We ask the compiler to copy right-hand operand into the object being created,
 converting that operand if necessary.
 
 
-
+# copy v.s move
+- the difference between copy and move is that<br>
+  after a copy the two objects have the same value<br>
+  whereas after a move the source object is not required to have its original value
+- move can be used when the source object will not be used again   
