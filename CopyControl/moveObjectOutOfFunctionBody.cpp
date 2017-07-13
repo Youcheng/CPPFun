@@ -43,6 +43,10 @@ int main() {
     //  copyAssignment from 0x7ffdf13577cc(x2) to 0x7ffdf13577cd(x1)
 
 
-    // destructor 0x7ffdf13577cc(x1)
+    xoo x3(std::move(x1));
+    // moveConstructor from 0x7ffdf13577cd(x1) to 0x7fffd1a43feb(x3)
+
+    // destructor 0x7fffd1a43feb(x3)
     // destructor 0x7ffdf13577cd(x2)
+    // destructor 0x7ffdf13577cc(x1)
 }
