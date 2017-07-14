@@ -29,8 +29,6 @@ NUMA node1 CPU(s):     12-23
 
 cat /proc/cpuinfo
 -----------------
-
-````
 [01:18 PM root@cr-pvg-krn02 ~ ]# cat /proc/cpuinfo
 processor	: 0
 vendor_id	: GenuineIntel
@@ -41,10 +39,10 @@ stepping	: 1
 microcode	: 0xb000010
 cpu MHz		: 2999.882
 cache size	: 30720 KB
-physical id	: 0   <- **a phyical device which contains a lot of physical cores**
-siblings	: 12  <- number of logic processors in this physical device
-core id		: 0   <- the #th of the physical core at which the logic process resides
-cpu cores	: 12  <- number of physical cores in this physical device
+physical id	: 0   **<- a phyical device which contains a lot of physical cores**
+siblings	: 12  **<- number of logic processors in this physical device**
+core id		: 0   **<- the #th of the physical core at which the logic process resides**
+cpu cores	: 12  **<- number of physical cores in this physical device**
 apicid		: 0
 initial apicid	: 0
 fpu		: yes
@@ -656,8 +654,9 @@ cache_alignment	: 64
 address sizes	: 46 bits physical, 48 bits virtual
 power management:
 
-````
 
 
-# `numa`
+
+numa
+----
 ![Numma layout](https://github.com/Youcheng/CPPFun/blob/master/NumaNode/numa.png)
