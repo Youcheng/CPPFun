@@ -38,10 +38,10 @@ stepping	: 1
 microcode	: 0xb000010
 cpu MHz		: 2999.882
 cache size	: 30720 KB
-physical id	: 0
-siblings	: 12
-core id		: 0
-cpu cores	: 12
+physical id	: 0   <- **a phyical device which contains a lot of physical cores**
+siblings	: 12  <- number of logic processors in this physical device
+core id		: 0   <- the #th of the physical core at which the logic process resides
+cpu cores	: 12  <- number of physical cores in this physical device
 apicid		: 0
 initial apicid	: 0
 fpu		: yes
