@@ -1,5 +1,6 @@
-# `lscpu`
-````
+lscpu
+------
+
 [12:46 PM root@cr-pvg-krn02 ~ ]# lscpu
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
@@ -24,9 +25,11 @@ L2 cache:              256K
 L3 cache:              30720K
 NUMA node0 CPU(s):     0-11
 NUMA node1 CPU(s):     12-23
-````
 
-# `cat /proc/cpuinfo`
+
+cat /proc/cpuinfo
+-----------------
+
 ````
 [01:18 PM root@cr-pvg-krn02 ~ ]# cat /proc/cpuinfo
 processor	: 0

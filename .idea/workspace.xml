@@ -65,7 +65,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96adfb41-dbf3-47e7-a952-18b24c8ca982" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NumaNode/README.md" afterPath="$PROJECT_DIR$/NumaNode/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -96,8 +95,8 @@
         <entry file="file://$PROJECT_DIR$/NumaNode/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="126">
-                <caret line="40" column="80" lean-forward="false" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+              <first_editor relative-caret-position="450">
+                <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -794,12 +793,12 @@
       <workItem from="1499764740679" duration="1917000" />
       <workItem from="1499821585096" duration="20324000" />
       <workItem from="1499908029201" duration="31757000" />
-      <workItem from="1499995350094" duration="13258000" />
+      <workItem from="1499995350094" duration="13508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193016000" />
+    <option name="totallyTimeSpent" value="193266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1315,8 +1314,8 @@
     <entry file="file://$PROJECT_DIR$/NumaNode/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="40" column="80" lean-forward="false" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+          <first_editor relative-caret-position="450">
+            <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
