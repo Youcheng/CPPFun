@@ -659,4 +659,4 @@ lscpu
 
 numa
 ----
-    ![Numma layout](https://github.com/Youcheng/CPPFun/blob/master/NumaNode/numa.png)
+![Numma layout](https://github.com/Youcheng/CPPFun/blob/master/NumaNode/numa.png)
