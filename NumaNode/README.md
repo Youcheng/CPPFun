@@ -26,8 +26,8 @@ lscpu
     NUMA node1 CPU(s):     12-23
 
 
-    cat /proc/cpuinfo
-    -----------------
+cat /proc/cpuinfo
+-----------------
     [01:18 PM root@cr-pvg-krn02 ~ ]# cat /proc/cpuinfo
     processor	: 0
     vendor_id	: GenuineIntel
