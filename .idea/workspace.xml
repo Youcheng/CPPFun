@@ -2,53 +2,60 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="CPPFun" targetName="syncUdpDaytimeClient" />
       <config projectName="CPPFun" targetName="asyncTcpDaytimeServer" />
-      <config projectName="CPPFun" targetName="universalReference" />
-      <config projectName="CPPFun" targetName="pollutedNamespace" />
       <config projectName="CPPFun" targetName="moveObjectOutOfFunctionBody" />
-      <config projectName="CPPFun" targetName="future" />
       <config projectName="CPPFun" targetName="CMakeCXXCompilerId" />
       <config projectName="CPPFun" targetName="catchExceptFromConstructorInitializer" />
       <config projectName="CPPFun" targetName="log" />
       <config projectName="CPPFun" targetName="replaceTextMacros" />
-      <config projectName="CPPFun" targetName="alignment" />
       <config projectName="CPPFun" targetName="dso" />
+      <config projectName="CPPFun" targetName="functionOverload" />
+      <config projectName="CPPFun" targetName="defaultAllocator" />
+      <config projectName="CPPFun" targetName="syncTcpDaytimeClient" />
+      <config projectName="CPPFun" targetName="chat_client" />
+      <config projectName="CPPFun" targetName="heapProblems" />
+      <config projectName="CPPFun" targetName="binarySearch" />
+      <config projectName="CPPFun" targetName="example" />
+      <config projectName="CPPFun" targetName="widget" />
+      <config projectName="CPPFun" targetName="loadDso" />
+      <config projectName="CPPFun" targetName="perfectForwarding" />
+      <config projectName="CPPFun" targetName="file1" />
+      <config projectName="CPPFun" targetName="file2" />
+      <config projectName="CPPFun" targetName="asyncTcpUdpServer" />
+      <config projectName="CPPFun" targetName="structMemeberAlign" />
+      <config projectName="CPPFun" targetName="cstrcpy" />
+      <config projectName="CPPFun" targetName="multipleVirtualFunc" />
+      <config projectName="CPPFun" targetName="rangeFor" />
+      <config projectName="CPPFun" targetName="staticAssert" />
+      <config projectName="CPPFun" targetName="placementNew" />
+      <config projectName="CPPFun" targetName="rlvalue" />
+      <config projectName="CPPFun" targetName="type" />
+      <config projectName="CPPFun" targetName="throwExceptInDestructor" />
+      <config projectName="CPPFun" targetName="boostasio" />
+      <config projectName="CPPFun" targetName="syncUdpDaytimeClient" />
+      <config projectName="CPPFun" targetName="universalReference" />
+      <config projectName="CPPFun" targetName="pollutedNamespace" />
+      <config projectName="CPPFun" targetName="future" />
+      <config projectName="CPPFun" targetName="alignment" />
       <config projectName="CPPFun" targetName="fun" />
       <config projectName="CPPFun" targetName="weak_ptr" />
       <config projectName="CPPFun" targetName="dlopen" />
       <config projectName="CPPFun" targetName="operatorNewOverload" />
-      <config projectName="CPPFun" targetName="defaultAllocator" />
       <config projectName="CPPFun" targetName="accelerateDecelerate" />
-      <config projectName="CPPFun" targetName="syncTcpDaytimeClient" />
-      <config projectName="CPPFun" targetName="chat_client" />
-      <config projectName="CPPFun" targetName="heapProblems" />
       <config projectName="CPPFun" targetName="threadLocal" />
-      <config projectName="CPPFun" targetName="example" />
       <config projectName="CPPFun" targetName="asyncUdpDaytimeServer" />
-      <config projectName="CPPFun" targetName="widget" />
-      <config projectName="CPPFun" targetName="binarySearch" />
       <config projectName="CPPFun" targetName="copyInitialization" />
       <config projectName="CPPFun" targetName="shared_ptr" />
-      <config projectName="CPPFun" targetName="loadDso" />
-      <config projectName="CPPFun" targetName="perfectForwarding" />
       <config projectName="CPPFun" targetName="functionTemplateSpecialization" />
-      <config projectName="CPPFun" targetName="asyncTcpUdpServer" />
-      <config projectName="CPPFun" targetName="structMemeberAlign" />
+      <config projectName="CPPFun" targetName="mainFunc" />
+      <config projectName="CPPFun" targetName="functionTempSpec" />
       <config projectName="CPPFun" targetName="conditionVariable" />
-      <config projectName="CPPFun" targetName="cstrcpy" />
-      <config projectName="CPPFun" targetName="multipleVirtualFunc" />
-      <config projectName="CPPFun" targetName="rangeFor" />
+      <config projectName="CPPFun" targetName="liveLock" />
       <config projectName="CPPFun" targetName="chat_server" />
-      <config projectName="CPPFun" targetName="staticAssert" />
-      <config projectName="CPPFun" targetName="placementNew" />
-      <config projectName="CPPFun" targetName="rlvalue" />
       <config projectName="CPPFun" targetName="deadLock" />
+      <config projectName="CPPFun" targetName="mainFuncArgument" />
       <config projectName="CPPFun" targetName="writerReader" />
-      <config projectName="CPPFun" targetName="type" />
-      <config projectName="CPPFun" targetName="throwExceptInDestructor" />
       <config projectName="CPPFun" targetName="quickSort" />
-      <config projectName="CPPFun" targetName="boostasio" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -58,7 +65,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96adfb41-dbf3-47e7-a952-18b24c8ca982" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CopyControl/README.md" afterPath="$PROJECT_DIR$/CopyControl/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiveLock/README.md" afterPath="$PROJECT_DIR$/LiveLock/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LiveLock/liveLock.cpp" afterPath="$PROJECT_DIR$/LiveLock/liveLock.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StorageDurationAndLinkage/README.md" afterPath="$PROJECT_DIR$/StorageDurationAndLinkage/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,22 +81,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="moveObjectOutOfFunctionBody.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CopyControl/moveObjectOutOfFunctionBody.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MemoryModel/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="306">
+                <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CopyControl/README.md">
+        <entry file="file://$PROJECT_DIR$/NumaNode/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="493">
-                <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <first_editor relative-caret-position="522">
+                <caret line="29" column="76" lean-forward="false" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -133,21 +146,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NamespacePollution/snip2.h" />
-        <option value="$PROJECT_DIR$/NamespacePollution/READMEme" />
-        <option value="$PROJECT_DIR$/NamespacePollution/pollutedNamespace.cpp" />
-        <option value="$PROJECT_DIR$/CMakeScriptLearning/READMD.md" />
-        <option value="$PROJECT_DIR$/SmartPointer/shared_ptr.cpp" />
-        <option value="$PROJECT_DIR$/SmartPointer/README.md" />
-        <option value="$PROJECT_DIR$/SmartPointer/weak_ptr.cpp" />
-        <option value="$PROJECT_DIR$/Visibility/README.md" />
-        <option value="$PROJECT_DIR$/VirtualFunction/loadDso.cpp" />
-        <option value="$PROJECT_DIR$/Visibility/dso.cpp" />
-        <option value="$PROJECT_DIR$/Visibility/dso.h" />
         <option value="$PROJECT_DIR$/Visibility/loadDso.cpp" />
         <option value="$PROJECT_DIR$/CMakeScriptLearning/cmakescript.txt" />
         <option value="$PROJECT_DIR$/CompilerOptimization/copyElision.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/LeakFreedom/README.md" />
         <option value="$PROJECT_DIR$/Alignment/alignment.cpp" />
         <option value="$PROJECT_DIR$/HerbSutter/BackToBasics/README.md" />
@@ -184,6 +185,18 @@
         <option value="$PROJECT_DIR$/Algorithm/binarySearch.cpp" />
         <option value="$PROJECT_DIR$/CopyControl/moveObjectOutOfFunctionBody.cpp" />
         <option value="$PROJECT_DIR$/CopyControl/README.md" />
+        <option value="$PROJECT_DIR$/LiveLock/README.md" />
+        <option value="$PROJECT_DIR$/LiveLock/liveLock.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/README.md" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file2.hpp" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/mainFunc.cpp" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file2.cpp" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file1.cpp" />
+        <option value="$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file1.hpp" />
+        <option value="$PROJECT_DIR$/MainFunctionArgument/mainFuncArgument.cpp" />
+        <option value="$PROJECT_DIR$/MemoryModel/README.md" />
+        <option value="$PROJECT_DIR$/NumaNode/README.md" />
       </list>
     </option>
   </component>
@@ -239,63 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PlacementNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OperatorNewDelete" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MemoryManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CopyControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CPPFun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithm" />
+              <option name="myItemId" value="NumaNode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,12 +266,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../web_server/algo_server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/PerfectForwarding" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/HerbSutter" />
       <recent name="$PROJECT_DIR$/Visibility" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NumaNode" />
+      <recent name="$PROJECT_DIR$/PerfectForwarding" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.moveObjectOutOfFunctionBody">
+  <component name="RunManager" selected="Application.mainFuncArgument">
     <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
       <method />
     </configuration>
@@ -617,11 +575,27 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="file1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="file1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="file1">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="file2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="file2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="file2">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="fun" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="fun" CONFIG_NAME="Debug">
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="functionOverload" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="functionOverload" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="functionOverload">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="functionTemplateSpecialization" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="functionTemplateSpecialization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="functionTemplateSpecialization">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="functionTempSpec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="functionTempSpec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="functionTempSpec">
       <envs />
       <method />
     </configuration>
@@ -633,11 +607,19 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="liveLock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="liveLock" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="liveLock">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="loadDso" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="loadDso" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="loadDso">
       <envs />
       <method />
     </configuration>
     <configuration default="false" name="log" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="log" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="log">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mainFunc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="mainFunc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="mainFunc">
       <envs />
       <method />
     </configuration>
@@ -729,7 +711,11 @@
       <envs />
       <method />
     </configuration>
-    <list size="48">
+    <configuration default="false" name="mainFuncArgument" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="file1.cpp -x name" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CPPFun" TARGET_NAME="mainFuncArgument" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CPPFun" RUN_TARGET_NAME="mainFuncArgument">
+      <envs />
+      <method />
+    </configuration>
+    <list size="55">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.accelerateDecelerate" />
       <item index="2" class="java.lang.String" itemvalue="Application.alignment" />
@@ -750,34 +736,41 @@
       <item index="17" class="java.lang.String" itemvalue="Application.dlopen" />
       <item index="18" class="java.lang.String" itemvalue="Application.dso" />
       <item index="19" class="java.lang.String" itemvalue="Application.example" />
-      <item index="20" class="java.lang.String" itemvalue="Application.fun" />
-      <item index="21" class="java.lang.String" itemvalue="Application.functionTemplateSpecialization" />
-      <item index="22" class="java.lang.String" itemvalue="Application.future" />
-      <item index="23" class="java.lang.String" itemvalue="Application.heapProblems" />
-      <item index="24" class="java.lang.String" itemvalue="Application.loadDso" />
-      <item index="25" class="java.lang.String" itemvalue="Application.log" />
-      <item index="26" class="java.lang.String" itemvalue="Application.moveObjectOutOfFunctionBody" />
-      <item index="27" class="java.lang.String" itemvalue="Application.multipleVirtualFunc" />
-      <item index="28" class="java.lang.String" itemvalue="Application.operatorNewOverload" />
-      <item index="29" class="java.lang.String" itemvalue="Application.perfectForwarding" />
-      <item index="30" class="java.lang.String" itemvalue="Application.placementNew" />
-      <item index="31" class="java.lang.String" itemvalue="Application.pollutedNamespace" />
-      <item index="32" class="java.lang.String" itemvalue="Application.quickSort" />
-      <item index="33" class="java.lang.String" itemvalue="Application.rangeFor" />
-      <item index="34" class="java.lang.String" itemvalue="Application.replaceTextMacros" />
-      <item index="35" class="java.lang.String" itemvalue="Application.rlvalue" />
-      <item index="36" class="java.lang.String" itemvalue="Application.shared_ptr" />
-      <item index="37" class="java.lang.String" itemvalue="Application.staticAssert" />
-      <item index="38" class="java.lang.String" itemvalue="Application.structMemeberAlign" />
-      <item index="39" class="java.lang.String" itemvalue="Application.syncTcpDaytimeClient" />
-      <item index="40" class="java.lang.String" itemvalue="Application.syncUdpDaytimeClient" />
-      <item index="41" class="java.lang.String" itemvalue="Application.threadLocal" />
-      <item index="42" class="java.lang.String" itemvalue="Application.throwExceptInDestructor" />
-      <item index="43" class="java.lang.String" itemvalue="Application.type" />
-      <item index="44" class="java.lang.String" itemvalue="Application.universalReference" />
-      <item index="45" class="java.lang.String" itemvalue="Application.weak_ptr" />
-      <item index="46" class="java.lang.String" itemvalue="Application.widget" />
-      <item index="47" class="java.lang.String" itemvalue="Application.writerReader" />
+      <item index="20" class="java.lang.String" itemvalue="Application.file1" />
+      <item index="21" class="java.lang.String" itemvalue="Application.file2" />
+      <item index="22" class="java.lang.String" itemvalue="Application.fun" />
+      <item index="23" class="java.lang.String" itemvalue="Application.functionOverload" />
+      <item index="24" class="java.lang.String" itemvalue="Application.functionTemplateSpecialization" />
+      <item index="25" class="java.lang.String" itemvalue="Application.functionTempSpec" />
+      <item index="26" class="java.lang.String" itemvalue="Application.future" />
+      <item index="27" class="java.lang.String" itemvalue="Application.heapProblems" />
+      <item index="28" class="java.lang.String" itemvalue="Application.liveLock" />
+      <item index="29" class="java.lang.String" itemvalue="Application.loadDso" />
+      <item index="30" class="java.lang.String" itemvalue="Application.log" />
+      <item index="31" class="java.lang.String" itemvalue="Application.mainFunc" />
+      <item index="32" class="java.lang.String" itemvalue="Application.moveObjectOutOfFunctionBody" />
+      <item index="33" class="java.lang.String" itemvalue="Application.multipleVirtualFunc" />
+      <item index="34" class="java.lang.String" itemvalue="Application.operatorNewOverload" />
+      <item index="35" class="java.lang.String" itemvalue="Application.perfectForwarding" />
+      <item index="36" class="java.lang.String" itemvalue="Application.placementNew" />
+      <item index="37" class="java.lang.String" itemvalue="Application.pollutedNamespace" />
+      <item index="38" class="java.lang.String" itemvalue="Application.quickSort" />
+      <item index="39" class="java.lang.String" itemvalue="Application.rangeFor" />
+      <item index="40" class="java.lang.String" itemvalue="Application.replaceTextMacros" />
+      <item index="41" class="java.lang.String" itemvalue="Application.rlvalue" />
+      <item index="42" class="java.lang.String" itemvalue="Application.shared_ptr" />
+      <item index="43" class="java.lang.String" itemvalue="Application.staticAssert" />
+      <item index="44" class="java.lang.String" itemvalue="Application.structMemeberAlign" />
+      <item index="45" class="java.lang.String" itemvalue="Application.syncTcpDaytimeClient" />
+      <item index="46" class="java.lang.String" itemvalue="Application.syncUdpDaytimeClient" />
+      <item index="47" class="java.lang.String" itemvalue="Application.threadLocal" />
+      <item index="48" class="java.lang.String" itemvalue="Application.throwExceptInDestructor" />
+      <item index="49" class="java.lang.String" itemvalue="Application.type" />
+      <item index="50" class="java.lang.String" itemvalue="Application.universalReference" />
+      <item index="51" class="java.lang.String" itemvalue="Application.weak_ptr" />
+      <item index="52" class="java.lang.String" itemvalue="Application.widget" />
+      <item index="53" class="java.lang.String" itemvalue="Application.writerReader" />
+      <item index="54" class="java.lang.String" itemvalue="Application.mainFuncArgument" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -802,12 +795,13 @@
       <workItem from="1498032740990" duration="38471000" />
       <workItem from="1499764740679" duration="1917000" />
       <workItem from="1499821585096" duration="20324000" />
-      <workItem from="1499908029201" duration="31074000" />
+      <workItem from="1499908029201" duration="31757000" />
+      <workItem from="1499995350094" duration="10947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179075000" />
+    <option name="totallyTimeSpent" value="190705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -820,17 +814,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20855615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21122995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36243093" sideWeight="0.49358287" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2839779" sideWeight="0.49358287" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42209944" sideWeight="0.49572194" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5053476" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4364641" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38232043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5359116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33038673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33038673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5281768" sideWeight="0.49465242" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -905,97 +898,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Thread/accelerateDecelerate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="78" column="48" lean-forward="false" selection-start-line="78" selection-start-column="48" selection-end-line="78" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/asyncTcpUdpServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/syncUdpDaytimeClient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/asyncUdpDaytimeServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/syncTcpDaytimeClient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/asyncTcpDaytimeServer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/chat_client.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/chat_server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="147" column="48" lean-forward="true" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Asio/chat_message.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" column="26" lean-forward="false" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UniversalReference/universalReference.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RightValueReference/rlvalue.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RightValueReference/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UniversalReference/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1060,20 +962,8 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="432">
             <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="28" selection-end-column="53" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PerfectForwarding/perfectForwarding.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-            <element signature="e#301#313#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,7 +972,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="444">
             <caret line="32" column="84" lean-forward="false" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1102,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,7 +1007,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="18">
             <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1130,7 +1017,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="18">
             <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="56" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1151,7 +1037,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="72">
             <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1161,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="616" column="4" lean-forward="false" selection-start-line="616" selection-start-column="4" selection-end-line="616" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,10 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding>
-            <element signature="e#3589#3622#0" expanded="false" />
-            <element signature="e#3843#4099#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1186,22 +1066,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/threadLocal.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Allocator/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="54">
             <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1211,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,19 +1094,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/cresearch/vendor/gcc/6.3.0/include/c++/6.3.0/ext/alloc_traits.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1294,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1302,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
           <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,19 +1165,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CopyControl/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="702">
+            <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CopyControl/moveObjectOutOfFunctionBody.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
+        <state relative-caret-position="537">
           <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CopyControl/README.md">
+    <entry file="file://$PROJECT_DIR$/PerfectForwarding/perfectForwarding.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveLock/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="493">
-            <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <first_editor relative-caret-position="18">
+            <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveLock/liveLock.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/threadLocal.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file1.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="132" column="8" lean-forward="false" selection-start-line="132" selection-start-column="8" selection-end-line="132" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MainFunctionArgument/mainFuncArgument.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/mainFunc.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StorageDurationAndLinkage/linkageProject/file2.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MemoryModel/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumaNode/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="522">
+            <caret line="29" column="76" lean-forward="false" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
             <folding />
           </first_editor>
           <second_editor />
