@@ -26,3 +26,17 @@ x = x + 1
 word in the memory
 ------------------
     - the machine cannot load or store anything smaller than a word
+
+memory ordering
+----
+    The time needed to get the value of a word from memory into a cache,
+    then into a register, can be (on a processor’s time scale) very long.
+    At best, maybe 500 instructions are executed before the value reaches the register,
+    and another 500 instructions are executed before a new value reaches its
+    intended location.
+
+    Memory ordering is the term used to describe
+    what a programmer can assume about what a thread
+    sees when it looks at a value from memory.
+
+![Memory hierarchy](https://github.com/Youcheng/CPPFun/blob/master/MemoryModel/memoryHierarchy.png)

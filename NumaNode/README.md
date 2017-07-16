@@ -659,4 +659,4 @@ cat /proc/cpuinfo
 
 numa
 ----
-![Numma layout](https://github.com/Youcheng/CPPFun/blob/master/NumaNode/numa.png)
+![Numa layout](https://github.com/Youcheng/CPPFun/blob/master/NumaNode/numa.png)
