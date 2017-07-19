@@ -31,6 +31,20 @@ int main()
         // - decrement the reference to object of A by 1
         // - check whether the current count is 0 but it is 1 since A.ptr still points to it.
         // Therefore, A won't be destroyed.(memory leak)
-
 }
+
+// Example output
+//    /home/ylin/CLionProjects/CPPFun/cmake-build-debug/cycliSharedPtr
+//    A 0x14bbc30
+//      &x 0x7ffdb235d9f0
+//    x.get() 0x14bbc30
+//            &(x->ptr) 0x14bbc38
+//    x->ptr.get() 0
+//    x.use_count() 1
+//
+//                  &x 0x7ffdb235d9f0
+//    x.get() 0x14bbc30
+//            &(x->ptr) 0x14bbc38
+//    x->ptr.get() 0x14bbc30
+//    x.use_count() 2
 

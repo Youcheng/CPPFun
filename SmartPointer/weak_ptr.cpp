@@ -33,3 +33,20 @@ int main()
         // - since we are using the weak_ptr, A.ptr points to the same object of A, so the current is actually 0 now.
         // - then delete A* will be called to release that memory on the heap.
 }
+
+
+// Example output
+//A 0x9a0c30
+//&x 0x7ffccb9a0430
+//x.get() 0x9a0c30
+//&(x->ptr) 0x9a0c38
+//x->ptr.get() 0
+//x.use_count() 1
+//
+//&x 0x7ffccb9a0430
+//x.get() 0x9a0c30
+//&(x->ptr) 0x9a0c38
+//x->ptr.get() 0x9a0c30
+//x.use_count() 1
+//
+//~A 0x9a0c30
