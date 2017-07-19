@@ -79,26 +79,26 @@ int main() {
 
     Employee* p = new Employee(3.2);
     // new
-    // steps into the body of overloaded new operator function
+    // steps into the body of overloaded operator new function
     // steps into the body of constructor when falling off the end of the body of overloaded new operator function
 
     std::cout << p << std::endl;
     delete p;
     // delete
     // steps into the body of destructor
-    // steps into the body of overloaded delete operator function
+    // steps into the body of overloaded operator delete function
 
     std::cout << "----------" << std::endl;
     Employee *pa = new Employee[2];
     // new []
-    // steps into the body of overloaded new[] operator function
+    // steps into the body of overloaded operator new[] function
     // steps into the body of constructor 4 times when falling off the end of the body of overloaded new operator function
 
 
     delete[] pa;
     // delete[]
     // steps into the body of destructor 4 times
-    // steps into the body of overloaded delete[] operator function
+    // steps into the body of overloaded opearator delete[] function
 
     std::cout << "----------" << std::endl;
     Employee* q = new Manager();

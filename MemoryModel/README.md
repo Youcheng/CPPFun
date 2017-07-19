@@ -8,12 +8,11 @@ memory model
       have to think about the details of modern computer hardware.
     -  The C++ memory model guarantees that two threads of execution can update and access sepa-
        rate memory locations without interfering with each other
-  
+
 operation on an object in memory
 --------------------------------
     - are never directly performed on the object in memory.
     - the object is first loaded from main memory into a cache memory and then to a register.
-
 
 x = x + 1
 ---------

@@ -4,7 +4,7 @@
 struct A
 {
     int i=5;
-    std::weak_ptr<A> ptr;
+    std::shared_ptr<A> ptr;
 
     A() { std::cout << __FUNCTION__ << " " << this << std::endl; }
     ~A() { std::cout << __FUNCTION__ << " " << this  <<std::endl; }
@@ -17,19 +17,20 @@ int main()
         std::cout << "&x " << &x << std::endl
                   << "x.get() " << x.get() << std::endl
                   << "&(x->ptr) " << &(x->ptr) << std::endl
-                  << "x->ptr.get() " << x->ptr.lock().get() << std::endl
+                  << "x->ptr.get() " << x->ptr.get() << std::endl
                   << "x.use_count() " << x.use_count() << std::endl << std::endl;
 
         x->ptr = x;
         std::cout << "&x " << &x << std::endl
                   << "x.get() " << x.get() << std::endl
                   << "&(x->ptr) " << &(x->ptr) << std::endl
-                  << "x->ptr.get() " << x->ptr.lock().get() << std::endl
+                  << "x->ptr.get() " << x->ptr.get() << std::endl
                   << "x.use_count() " << x.use_count() << std::endl << std::endl;
 
         // when x goes out of scope, the destructor of X will be called
         // - decrement the reference to object of A by 1
-        // - check whether the current count is 0,
-        // - since we are using the weak_ptr, A.ptr points to the same object of A, so the current is actually 0 now.
-        // - then delete A* will be called to release that memory on the heap.
+        // - check whether the current count is 0 but it is 1 since A.ptr still points to it.
+        // Therefore, A won't be destroyed.(memory leak)
+
 }
+
