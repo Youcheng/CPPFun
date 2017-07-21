@@ -19,7 +19,7 @@ int main() {
     CPU_ZERO(&cpuset);
     //CPU_SET(17, &cpuset);
     CPU_SET(18, &cpuset);
-    CPU_SET(19, &cpuset);
+    //CPU_SET(19, &cpuset);
 
     /*
      * The pthread_setaffinity_np() function sets the CPU affinity mask of the thread to the CPU set pointed to by cpuset.

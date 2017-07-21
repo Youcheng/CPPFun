@@ -1,0 +1,22 @@
+{
+  "threads": [
+    {
+      "threadName": "KG1"
+    },
+    {
+      "threadName": "KG2"
+    }
+  ],
+  "sessions": [
+    {
+      "type": "cmi2",
+      "sessionName": "trade_cmi2_1",
+      "threadName": "KG1"
+    },
+    {
+      "type": "sim",
+      "sessionName": "trade_sim1",
+      "threadName": "KG2"
+    }
+  ]
+}
