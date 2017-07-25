@@ -33,5 +33,8 @@ int main() {
     std::cout << "The config file is" << std::endl
               << buf << std::endl;
 
+    // The lock is released either by an explicit LOCK_UN operation
+    // on any of these duplicate descriptors, or when all such descriptors have been closed.
+
     std::this_thread::sleep_for(std::chrono::seconds(120));
 }
