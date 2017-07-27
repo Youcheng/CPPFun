@@ -38,3 +38,26 @@ converting that operand if necessary.
   both equal to y ’s value before the assignment
 - Move leaves x with y ’s former value and y with some moved-from state. <br>
   For the most interesting cases, containers, that moved-from state is ‘‘empty.’’    
+
+
+# implmentation of copy/move constructor with pointer member variable
+* copy constructor
+  * allocate new memory if necessary
+  * copy the value of managed object from source
+  * do nothing to the manged object from source
+* move constructor
+  * copy the address of manged object from source
+  * set the address of manged object from source to null
+  * do nothing to the manged object from source
+
+# implmentation of copy/move assignment operator with pointer member variable
+* copy assignment
+  * check whether copy to itself
+  * free the manged object of destination if there is any
+  * allocate new memory if necessary
+  * copy the value of managed object from source
+* move assignment
+  * check whether move to itself
+  * free the manged object of destination if there is any
+  * copy the address of manged object from source
+  * do nothing to the manged object from source
