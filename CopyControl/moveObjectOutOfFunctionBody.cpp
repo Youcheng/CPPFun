@@ -109,43 +109,50 @@ xoo increment(xoo arg) {
 int main() {
 
     xoo x1;
-    // default constructor for x1
 
     x1 = increment(x1);
-    // copy constructor from x1 to arg
-    // move constructor from arg to tmp
-    // move assignment from tmp to x1
-    // destructor for tmp
-    // destructor for arg
 
-    std::cout << "x1 address " << &x1 << std::endl;
+    std::cout << "x1 address " << &x1 << std::endl<< std::endl;
 
-    xoo x2;
-    // default constructor
+    xoo x2 = increment(x1);
+
+    std::cout << "x2 address " << &x2 << std::endl<< std::endl;
 
     x1 = x2;
-    // copy assignment from x2 to x1
 
     xoo x3(std::move(x1));
-    // move constructor
+    std::cout << "x3 address " << &x3 << std::endl<< std::endl;
 
-    // destructor for x3, x2 and x1
+    xoo x4;
+    x4 = x3;
+    std::cout << "x4 address " << &x4 << std::endl<< std::endl;
+
 }
 
-//defaultConstructor 0x7ffe23c58680
-//copyConstructor from 0x7ffe23c58680 to 0x7ffe23c586a0
-//increment 0x7ffe23c586a0
-//moveConstructor from 0x7ffe23c586a0 to 0x7ffe23c58690
-//moveAssignment from 0x7ffe23c58690 to 0x7ffe23c58680
-//destructor 0x7ffe23c58690
-//destructor 0x7ffe23c586a0
-//x1 address 0x7ffe23c58680
-
-//defaultConstructor 0x7ffe23c58670
-//copyAssignment from 0x7ffe23c58670 to 0x7ffe23c58680
-
-//moveConstructor from 0x7ffe23c58680 to 0x7ffe23c58660
-
-//destructor 0x7ffe23c58660 x3
-//destructor 0x7ffe23c58670 x2
-//destructor 0x7ffe23c58680 x1
+//defaultConstructor 0x7ffce6bc3810(x1)
+//copyConstructor from 0x7ffce6bc3810(x1) to 0x7ffce6bc3830(arg)
+//increment 0x7ffce6bc3830(arg)
+//moveConstructor from 0x7ffce6bc3830(arg) to 0x7ffce6bc3820(tmp)
+//moveAssignment from 0x7ffce6bc3820(tmp) to 0x7ffce6bc3810(x1)
+//destructor 0x7ffce6bc3820(tmp)
+//destructor 0x7ffce6bc3830(arg)
+//x1 address 0x7ffce6bc3810
+//
+//copyConstructor from 0x7ffce6bc3810(x1) to 0x7ffce6bc3840(arg)
+//increment 0x7ffce6bc3840(arg)
+//moveConstructor from 0x7ffce6bc3840(arg) to 0x7ffce6bc3800(x2) < no tmp is created due to optimization
+//destructor 0x7ffce6bc3840(arg)
+//x2 address 0x7ffce6bc3800
+//
+//copyAssignment from 0x7ffce6bc3800(x2) to 0x7ffce6bc3810(x1)
+//moveConstructor from 0x7ffce6bc3810(x1) to 0x7ffce6bc37f0(x3) < no tmp is created due to optimization
+//x3 address 0x7ffce6bc37f0
+//
+//defaultConstructor 0x7ffce6bc37e0(x4)
+//copyAssignment from 0x7ffce6bc37f0(x3) to 0x7ffce6bc37e0(x4)
+//x4 address 0x7ffce6bc37e0(x4)
+//
+//destructor 0x7ffce6bc37e0
+//destructor 0x7ffce6bc37f0
+//destructor 0x7ffce6bc3800
+//destructor 0x7ffce6bc3810

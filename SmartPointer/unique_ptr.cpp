@@ -55,20 +55,32 @@ std::unique_ptr<Investment> makeInvestment(Type it, Args&&... params) {
             return pInv;
     }
 
-    std::cout << pInv.get() << std::endl;
-    // 0x7e8c20
-    // the resource(memory with address 0x7e8c20) manged by pInv will be moved to the caller
+    std::cout << &pInv << "  " << pInv.get() << std::endl;
+
     return pInv;
 }
 
 
 int main() {
+
+    // copy elision refers to a compiler optimization technique that eliminates unnecessary copying of objects
+    // Return value optimization
+    // pInv and pInvestment are the same object without doing copy construction
     auto pInvestment = makeInvestment(Type::RealEstate, 100, 4);
-    std::cout << pInvestment.get() << std::endl;
-    //0x7e8c20
+    std::cout << &pInvestment << "  " << pInvestment.get() << std::endl;
+
 
     if (pInvestment) {
         std::cout << pInvestment->getTotalValue() << std::endl;
         std::cout << pInvestment->getType() << std::endl;
     }
 }
+
+//Investment
+//RealEstate
+//0x7ffda2118a20  0x22f4c20
+//0x7ffda2118a20  0x22f4c20
+//400
+//RealEstate__
+//~RealEstate
+//~Investment
