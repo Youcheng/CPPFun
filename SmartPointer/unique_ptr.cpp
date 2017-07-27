@@ -55,13 +55,18 @@ std::unique_ptr<Investment> makeInvestment(Type it, Args&&... params) {
             return pInv;
     }
 
-    // pInv will be moved to the caller
+    std::cout << pInv.get() << std::endl;
+    // 0x7e8c20
+    // the resource(memory with address 0x7e8c20) manged by pInv will be moved to the caller
     return pInv;
 }
 
 
 int main() {
     auto pInvestment = makeInvestment(Type::RealEstate, 100, 4);
+    std::cout << pInvestment.get() << std::endl;
+    //0x7e8c20
+
     if (pInvestment) {
         std::cout << pInvestment->getTotalValue() << std::endl;
         std::cout << pInvestment->getType() << std::endl;
