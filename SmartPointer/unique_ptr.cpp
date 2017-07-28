@@ -33,10 +33,15 @@ struct RealEstate : public Investment {
 };
 
 template<typename... Args>
-std::unique_ptr<Investment> makeInvestment(Type it, Args&&... params) {
-    std::unique_ptr<Investment> pInv(nullptr);
+auto makeInvestment(Type it, Args&&... params) {
+    // customized deleter
+    auto delInvestment = [](Investment* pInvestment) {
+                                std::cout << "deleting " << pInvestment << std::endl;
+                                delete pInvestment;
+                           };
 
 
+    std::unique_ptr<Investment, decltype(delInvestment)> pInv(nullptr, delInvestment);
     // allocate an object on the heap and return a pointer to it
     // caller will be responsible to delete this from the heap
 
