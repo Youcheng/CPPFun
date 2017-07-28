@@ -9,6 +9,20 @@ unique_ptr
 
     move-only type(source pointer is set to nullptr)
 
+shared_ptr
+----------
+* raw pointers in shared_ptr
+   * raw pointer to the managed resource
+   * raw pointer to the resource's reference count
+
+* reference count
+  * shared_ptr normal constructor increment the resource's reference count
+  * shared_ptr normal copy assignment sp1 = sp2,the reference count for the object originally pointed by sp1 is decremented,
+    while that for the object pointed by sp2 is increamented
+  * shared_ptr move constructor set source to null, no reference count manipulation is required
+  * shared_ptr move assignment set source to null, no reference count manipulation is required
+  * shared_ptr destructor decrement the resource's reference count
+
 shared_ptr_control_block
 ------------------------
 ![shared_ptr_control_block](https://github.com/Youcheng/CPPFun/blob/master/SmartPointer/controlblock.png)
