@@ -39,6 +39,8 @@ std::unique_ptr<Investment> makeInvestment(Type it, Args&&... params) {
 
     // allocate an object on the heap and return a pointer to it
     // caller will be responsible to delete this from the heap
+
+    // polymorphism using smart pointer
     switch(it) {
         case Type::Bond:
             pInv.reset(new Bond(std::forward<Args>(params)...));
@@ -65,7 +67,9 @@ int main() {
 
     // copy elision refers to a compiler optimization technique that eliminates unnecessary copying of objects
     // Return value optimization
-    // pInv and pInvestment are the same object without doing copy construction
+    // without doing move constructing from pInv to tmp, move assignment to tmp to PInvestment
+    // without copying constrcuting from pInv to pInvestment
+    // pInv and pInvestment are the same object
     auto pInvestment = makeInvestment(Type::RealEstate, 100, 4);
     std::cout << &pInvestment << "  " << pInvestment.get() << std::endl;
 
