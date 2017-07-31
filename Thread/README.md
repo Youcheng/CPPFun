@@ -14,8 +14,8 @@ software thread(OS/system thread)
 
 
 
-std::thread
------------
+States of std::thread objects
+-----------------------------
     Objects in a C++ process that act as handles to underlying software threads.
 
     Joinable std::thread
@@ -34,6 +34,8 @@ std::thread
     4. Some std:thread objects have been detached (the connection between them
        and their underlying software thread has been severed)
 
+    One reason a std::thread’s joinability is important is that if the destructor
+    for a joinable thread is invoked, execution of the program is terminated.
 
 oversubscription
 ----------------

@@ -83,6 +83,12 @@ int main() {
         std::cout << pInvestment->getTotalValue() << std::endl;
         std::cout << pInvestment->getType() << std::endl;
     }
+
+    auto xx = [&]() -> std::unique_ptr<Investment> {
+
+    }();
+
+    std::cout << &xx << std::endl;
 }
 
 //Investment
