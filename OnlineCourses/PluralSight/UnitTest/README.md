@@ -13,3 +13,8 @@ What is catch ?
 - Powerful "Assertions"
 - Excellent error mesages
 - Sections
+
+
+How to use catch?
+-----------------
+[HeaderFileDownloadLink](https://github.com/philsquared/Catch/releases/download/v1.9.6/catch.hpp)
