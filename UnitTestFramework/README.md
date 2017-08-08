@@ -150,7 +150,7 @@ Catch Macros
 Test Fixtures
 -------------
 [Manual](https://github.com/philsquared/Catch/blob/master/docs/test-fixtures.md)
-![TestFixture](https://github.com/Youcheng/CPPFun/tree/blob/UnitTestFramework/TestFixture.png)
+![TestFixture](https://github.com/Youcheng/CPPFun/blob/master/UnitTestFramework/TestFixture.png)
 
 Sections
 --------
